@@ -1,3 +1,11 @@
 img{
     height: 150px;
   }
+  
+  .description{
+    font-size: 20px;
+  }
+  
+  #cook-time{
+    font-weight: bold;
+  }
