@@ -55,3 +55,12 @@ header p{
     margin: 0;
 }
 
+.property{
+    font-family: monospace;
+    color: #798086;
+}
+
+footer{
+    padding: 30 0 30 0;
+    font-weight: bold;
+}
