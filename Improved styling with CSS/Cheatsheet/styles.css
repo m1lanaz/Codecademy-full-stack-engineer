@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Palanquin:wght@100;300&family=Work+Sans:wght@300&display=swap');
+
+body{
+    font-family: 'Palanquin', sans-serif;    
+    font-weight: 300;
+    margin: 0;
+    background-color: #3A3A40;
+    color: white;
+    text-align: center;
+}
+
+table, th, td{
+    border: 2px solid #798086;
+    border-collapse: collapse;
+    margin:0 25% 0 25%;
+}
+
+table{
+    width: 50%;
+}
+
+
+header{
+    color: white;
+}
+
+li{
+    display: inline-block;
+    margin: none;
+    padding: 0 20px 0 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #798086;
+}
+
+h1{
+    margin: 0;
+}
+
+header p{
+    padding: 0;
+    margin: 0;
+}
+
