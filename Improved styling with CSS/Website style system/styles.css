@@ -1,6 +1,16 @@
+
+/** Body and hr tag **/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+hr{
+    border-top: 3px dashed black;
+    margin: 10px 0 10px 0;
+}
+
+/** Nav bar and h1 **/
 
 .navbar {
     list-style: none;
@@ -83,3 +93,38 @@ header h1 {
     color: #682738;
 }
 
+/** Font section **/
+
+h2{
+    text-align: center;
+}
+
+.font-1{
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.font-2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.font-3{
+    font-family: 'Abril Fatface';
+    font-size: 20px;
+    text-align: center;
+}
