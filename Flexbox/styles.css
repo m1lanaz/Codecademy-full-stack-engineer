@@ -7,8 +7,9 @@ body{
     opacity: 0.9;
 }
 
+//* This is the nav bar section *//
 
-img{
+.img-navbar{
     height: 50px;
     margin: 10px 0 0 10px;
 }
@@ -22,14 +23,14 @@ nav{
     width: 100%;
 }
 
-div{
+.div-navbarlist{
     display: flex;
     position: fixed;
     width: 100%;
     justify-content: flex-end;
 }
 
-ul{
+.navbarlist{
     list-style: none;
     position: relative;
     margin-top: 25px;
@@ -37,7 +38,7 @@ ul{
 
 }
 
-li{
+.navbarlistitems{
     display: inline;
     padding: 10px;
     color: seashell ;
@@ -52,6 +53,8 @@ a:hover{
     text-decoration-color: black;
 }
 
-li:hover{
+.navbarlistitems:hover{
     color: black;
 }
+
+//* this is the top section **/
