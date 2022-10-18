@@ -49,7 +49,17 @@ const getUserChoice = userInput => {
         return 'You won!';
       }
     };
-  
   }
+  
+  const playGame = (picked) => {
+    const userChoice = getUserChoice(picked);
+    const computerChoice = getComputerChoice();
+    console.log(`You picked ${userChoice}`);
+    console.log(`The computer picked ${computerChoice}`);
+    console.log(determineWinner(userChoice, computerChoice));
+  };
+  
+  playGame('rock');
+  
   
   
