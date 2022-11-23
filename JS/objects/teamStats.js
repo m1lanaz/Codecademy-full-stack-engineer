@@ -21,8 +21,19 @@ const team = {
         age : newAge,
       };
       this._players.push(player);
-    } 
+    } ,
+    addGame(newOpponent, newTeamPoints, newOpponentPoints) {
+      let game = {
+        opponent: newOpponent,
+        teamPoints: newTeamPoints,
+        opponentPoints : newOpponentPoints,
+      };
+      this._games.push(game);
+    }
   }
   
   team.addPlayer('Bugs', 'Bunny', 76);
   console.log(team._players);
+  
+  team.addGame('Titans', 7, 2);
+  console.log(team._games);
