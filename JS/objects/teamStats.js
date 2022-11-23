@@ -8,5 +8,10 @@ const team = {
       {opponent: 'West', teamPoints: 3, opponentPoints: 5},
       {opponent: 'East', teamPoints: 6, opponentPoints: 1}
     ],
-    
+    get players() {
+      return self._players;
+    },
+    get games() {
+      return self._games;
+    }
   }
