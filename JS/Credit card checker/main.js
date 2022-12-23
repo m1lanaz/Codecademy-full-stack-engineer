@@ -25,7 +25,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-const validateCred = (array) => {
+const validateCred = array => {
     let newArray = array.reverse();
     let arrayToValidate = []
     for(var i = 0; i < newArray.length; i++){
@@ -50,13 +50,32 @@ const validateCred = (array) => {
     }
 }
 
-const findInvalidCards = (array) => {
+const findInvalidCards = array => {
     let invalidCards = [];
     for(var i = 0; i < array.length; i++){
         if (validateCred(array[i]) === false) {
             invalidCards.push(array[i].reverse());
         }
     }
+    return invalidCards;
+}
+
+const idInvalidCardCompanies = array => {
+    let invalidCompanies = [];
+    for(var i = 0; i < array.length; i++){
+        if (array[i][0] === 3){
+            invalidCompanies.push("American Express");
+        }else if (array[i][0] === 4){
+            invalidCompanies.push("Visa");
+        }else if(array[i][0] === 5){
+            invalidCompanies.push("MasterCard");
+        }else if(array[i][0] === 6){
+            invalidCompanies.push("Discover");
+        }else{
+            invalidCompanies.push("Company not found");
+        }
+    }
+    return invalidCompanies;
 }
 
 
