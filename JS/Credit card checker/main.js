@@ -25,7 +25,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-alidateCred = (array) => {
+validateCred = (array) => {
     let newArray = array.reverse();
     let arrayToValidate = []
     for(var i = 0; i < newArray.length; i++){
@@ -39,7 +39,17 @@ alidateCred = (array) => {
             arrayToValidate.push(doubleDigit);
         }
     }
+    const sumOfArray = arrayToValidate.reduce((acc, value) => {
+        return acc + value;
+    }, 0);
+
+    if(sumOfArray % 10 === 0){
+        return true
+    } else {
+        return false
+    }
 }
+
 
 
 
