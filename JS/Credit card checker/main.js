@@ -25,22 +25,22 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-validateCred = (array) => {
-    let newArray = array.reverse;
+alidateCred = (array) => {
+    let newArray = array.reverse();
     let arrayToValidate = []
-    for(var i = 0; i > newArray.length; i++){
+    for(var i = 0; i < newArray.length; i++){
         if(i%2 === 0){
-            arrayToValidate.push[i]
+            arrayToValidate.push(newArray[i]);
         } else {
-            doubleDigit = i * 2;
-            if(doubleDigit < 9) {
+            doubleDigit = newArray[i] * 2;
+            if(doubleDigit > 9) {
                 doubleDigit = doubleDigit - 9;
             };
-            arrayToValidate.push[doubleDigit];
+            arrayToValidate.push(doubleDigit);
         }
     }
-    console.log(arrayToValidate);
 }
+
 
 
 
