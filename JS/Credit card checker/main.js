@@ -54,10 +54,9 @@ const findInvalidCards = (array) => {
     let invalidCards = [];
     for(var i = 0; i < array.length; i++){
         if (validateCred(array[i]) === false) {
-            invalidCards.push(array[i]);
+            invalidCards.push(array[i].reverse());
         }
     }
-    console.log(invalidCards)
 }
 
 
