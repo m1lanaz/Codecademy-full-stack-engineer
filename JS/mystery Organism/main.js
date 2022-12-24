@@ -36,6 +36,21 @@ const pAequorFactory = (num, array) => {
       }
       let getPercentage = (notSame / arrayLength) * 100;
       console.log(`The percentage of similarity is ${getPercentage}`);
+    },
+    willLikelySurvive() {
+      let arrayLength = this.dna.length +1;
+      let amountOfCG = 0;
+      for(var i =0; i < this.dna.length; i++){
+        if(this.dna[i] === 'G' || this.dna[i] === 'C'){
+          amountOfCG ++;
+        };
+        let strengthOfStrand = (amountOfCG / arrayLength) * 100;
+        if(strengthOfStrand >= 60){
+          return true
+        }else{
+          return false;
+        }
+      }
     }
   }
   
