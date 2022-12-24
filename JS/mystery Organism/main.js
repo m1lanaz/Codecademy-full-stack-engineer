@@ -43,18 +43,15 @@ const pAequorFactory = (num, array) => {
       for(var i =0; i < this.dna.length; i++){
         if(this.dna[i] === 'G' || this.dna[i] === 'C'){
           amountOfCG ++;
-        };
+        }};
         let strengthOfStrand = (amountOfCG / arrayLength) * 100;
         if(strengthOfStrand >= 60){
           return true
         }else{
           return false;
         }
-      }
-    }
+    }  
   }
-  
 }
-
 
 
