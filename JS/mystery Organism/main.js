@@ -19,19 +19,27 @@ const pAequorFactory = (num, array) => {
     dna: array,
     mutate() {
       let randomIndex = Math.floor(Math.random() * 16);
-      const indexBase = dna[randomIndex];
-      dna[randomIndex] = returnRandBase();
-      while(dna[randomIndex] === indexBase){
-        dna[randomIndex] = returnRandBase();
+      const indexBase = this.dna[randomIndex];
+      this.dna[randomIndex] = returnRandBase();
+      while(this.dna[randomIndex] === indexBase){
+        this.dna[randomIndex] = returnRandBase();
       };
 
+    },
+    compareDNA(pAequor) {
+      let arrayLength = this.dna.length + 1;
+      let notSame = 0;
+      for(var i = 0; i < this.dna.length; i++){
+        if(this.dna[i] != pAequor[i]){
+          notSame ++
+        }
+      }
+      let getPercentage = (notSame / arrayLength) * 100;
+      console.log(`The percentage of similarity is ${getPercentage}`);
     }
   }
   
 }
-
-
-
 
 
 
