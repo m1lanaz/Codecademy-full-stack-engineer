@@ -7,5 +7,5 @@ This repository includes all the projects I have completed whilst doing Codeacad
 
 ## The course
 
-Here is a link to the course httpswww.codecademy.comcareer-journeyfull-stack-engineer
+Here is a link to the course https/www.codecademy.comcareer-journeyfull-stack-engineer
 
