@@ -6,4 +6,4 @@ function generateRandomQuote(){
     return quotes[generatePosition];
 }
 
-
+console.log(generateRandomQuote())
